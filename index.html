@@ -11,7 +11,7 @@
   <script>
     document.getElementById('fb-login').addEventListener('click', function() {
       const appId = "796260202788868"; // Таны Facebook App ID
-      const redirectUri = "https://primary-production-d8572.up.railway.app/fb-callback"; // Production URI
+      const redirectUri = "https://primary-production-d8572.up.railway.app/webhook-test/fb-callback"; // Production URI
       const scope = "pages_show_list";
 
       const loginUrl = `https://www.facebook.com/v17.0/dialog/oauth?client_id=${appId}&redirect_uri=${encodeURIComponent(redirectUri)}&scope=${scope}&response_type=code`;
